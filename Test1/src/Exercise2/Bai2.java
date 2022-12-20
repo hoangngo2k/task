@@ -14,7 +14,7 @@ public class Bai2 {
             System.out.println("Số tiền điện phải trả là " + (25 * 1000 + (consumption - 25) * 1250) + "đ");
         } else if (consumption >= 75 && consumption < 150) {
             System.out.println("Số tiền điện phải trả là " + (25 * 1000 + (consumption - 25 - 75) * 1800 + 75 * 1250) + "đ");
-        } else if (consumption >= 150)
+        } else
             System.out.println("Số tiền điện phải trả là " + (25*1000 + (consumption-25-75-150)*2500 + 75*1250 + 150*1800) + "đ");
     }
 }
