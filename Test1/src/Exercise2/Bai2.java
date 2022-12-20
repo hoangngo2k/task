@@ -11,10 +11,10 @@ public class Bai2 {
         if (consumption >= 0 && consumption < 25)
             System.out.println("Số tiền điện phải trả là " + consumption*1000 + "đ");
         else if (consumption >= 25 && consumption < 75)
-            System.out.println("Số tiền điện phải trả là " + consumption*1250 + "đ");
+            System.out.println("Số tiền điện phải trả là " + (25*1000 + (consumption-25)*1250) + "đ");
         if (consumption >= 75 && consumption < 150)
-            System.out.println("Số tiền điện phải trả là " + consumption*1800 + "đ");
+            System.out.println("Số tiền điện phải trả là " + (25*1000 + (consumption-25-75)*1800 + 75*1250) + "đ");
         if (consumption >= 150)
-            System.out.println("Số tiền điện phải trả là " + consumption*2500 + "đ");
+            System.out.println("Số tiền điện phải trả là " + (25*1000 + (consumption-25-75-150)*2500 + 75*1250 + 150*1800) + "đ");
     }
 }
